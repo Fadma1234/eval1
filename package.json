@@ -1,0 +1,23 @@
+{
+  "name": "eval1",
+  "version": "1.0.0",
+  "description": "OpenRouter chat models — primary and free-tier tester",
+  "type": "module",
+  "scripts": {
+    "chat": "tsx model.ts",
+    "test-free": "tsx freeModel.ts",
+    "evaluate": "node evaluate.js",
+    "pipeline": "node --input-type=module --eval \"import { runPipeline } from './pipeline.js'; const r = await runPipeline(process.argv[2]); console.log(JSON.stringify(r, null, 2));\" --"
+  },
+  "dependencies": {
+    "@openrouter/sdk": "latest",
+    "dotenv": "^17.4.2",
+    "langsmith": "^0.5.19",
+    "openai": "^6.34.0"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "tsx": "latest",
+    "typescript": "latest"
+  }
+}
