@@ -1,6 +1,6 @@
 # eval1 — LLM Evaluation Pipeline
 
-**[🚀 Live Demo → web-five-kappa-30.vercel.app](https://web-five-kappa-30.vercel.app)**
+**[🚀 Live Demo https://web-five-kappa-30.vercel.app/)**
 
 A production-ready AI evaluation system using **OpenRouter** (free models) and **LangSmith** for tracing and scoring. Every question goes through a two-model pipeline: a **Generator** produces the answer, then an **Evaluator** (LLM-as-judge) scores it for accuracy.
 
